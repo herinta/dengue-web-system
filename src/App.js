@@ -4,6 +4,7 @@ import LandingPage from './pages/LandingPage';
 
 import { Routes, Route} from "react-router-dom";
 import Survey from './pages/Survey';
+import Maps from './pages/Maps';
 
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
       <Routes>
         <Route path="/" element={<LandingPage/>} />
         <Route path="/survey" element={<Survey/>} />
+        <Route path="/maps" element={<Maps/>} />
       </Routes>
     </div>
   );

@@ -10,16 +10,18 @@ export default function Hero() {
                 <b className="fs-1 p-4">Dengue Fever Web Clustering System</b>
             </div>
             <div className="d-flex mb-4">
-                <button type="button" className="btn btn-primary mx-auto">Survey Responden</button>
+                <button type="button" className="btn btn-primary mx-auto">Survey Respondents</button>
             </div>
             <div className="dropdown-center d-flex flex-column mx-auto">
-                <button className="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Pilih Kabupaten yang akan dianalisis
-                </button>
+                <Link to="/survey">
+                    <button className="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Select the District to be analyzed
+                    </button>
+                </Link>
                 <ul className="dropdown-menu">
                 
                 <li>
-                    <Link to="/" className="dropdown-item">
+                    <Link to="/Maps" className="dropdown-item">
                        Semarang
                     </Link>
                 </li>
