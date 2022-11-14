@@ -9,19 +9,21 @@ export default function Hero() {
             <div className="d-flex text-light">
                 <b className="fs-1 p-4">Dengue Fever Web Clustering System</b>
             </div>
-            <div className="d-flex mb-4">
-                <button type="button" className="btn btn-primary mx-auto">Survey Respondents</button>
+            <div className="d-flex mb-4 justify-content-center">
+                <Link to="/survey">
+                    <button type="button" className="btn btn-primary mx-auto">Survey Respondents</button>
+                </Link>
             </div>
             <div className="dropdown-center d-flex flex-column mx-auto">
-                <Link to="/survey">
-                    <button className="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Select the District to be analyzed
-                    </button>
-                </Link>
+                
+                <button className="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Select the District to be analyzed
+                </button>
+            
                 <ul className="dropdown-menu">
                 
                 <li>
-                    <Link to="/Maps" className="dropdown-item">
+                    <Link to="/maps" className="dropdown-item">
                        Semarang
                     </Link>
                 </li>
